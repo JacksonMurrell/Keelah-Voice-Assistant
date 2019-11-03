@@ -12,3 +12,6 @@ app/build/*
 
 # Java build files:
 *.class
+
+# Ignore any sound files for now.
+*.mp3
