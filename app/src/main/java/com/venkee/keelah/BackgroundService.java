@@ -4,13 +4,30 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 
+import androidx.annotation.Nullable;
+
 public class BackgroundService extends Service {
-    public BackgroundService() {
+
+
+    @Nullable
+    @Override
+    // Not needed so it return null.
+    public IBinder onBind(Intent intent) {
+        return null;
     }
 
     @Override
-    public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+    public void onCreate() {
+
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+    }
+
+    @Override
+    public void onDestroy() {
+
     }
 }
