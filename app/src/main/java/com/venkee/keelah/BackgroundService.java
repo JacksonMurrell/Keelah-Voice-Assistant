@@ -14,6 +14,7 @@ import com.spotify.android.appremote.api.ConnectionParams;
 import com.spotify.android.appremote.api.Connector;
 import com.spotify.android.appremote.api.SpotifyAppRemote;
 import com.spotify.protocol.types.Repeat;
+import com.venkee.keelah.parser.SpeechResult;
 
 import org.kaldi.Assets;
 import org.kaldi.Model;
@@ -107,7 +108,7 @@ public class BackgroundService extends IntentService implements RecognitionListe
         Log.d("Speech","" + json);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        com.venkee.keelah.com.venkee.keelah.parser.SpeechResult result = gson.fromJson(json, com.venkee.keelah.com.venkee.keelah.parser.SpeechResult.class);
+        SpeechResult result = gson.fromJson(json, SpeechResult.class);
 
         if (result == null || result.getText() == null || result.getText() == "") {
             return false;

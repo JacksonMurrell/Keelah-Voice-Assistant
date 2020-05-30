@@ -1,4 +1,4 @@
-package com.venkee.keelah.com.venkee.keelah.parser;
+package com.venkee.keelah.parser;
 
 public class SpeechResultEntry {
     private String word;
