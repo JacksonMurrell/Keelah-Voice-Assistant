@@ -1,1 +1,1 @@
-include ':app', ':spotify-app-remote-release-0.6.3'
+include ':app', ':spotify-app-remote-release-0.6.3', ':pocketsphinx-android-5prealpha-release', ':models', ':pocketsphinx-android', ':kaldi-android'

@@ -3,8 +3,11 @@
 /.idea/*
 .DS_Store
 /build
+*/build
 /captures
 .externalNativeBuild
+
+spotify-app-remote-release-0.6.3/build
 
 # Gradle build files:
 .gradle
